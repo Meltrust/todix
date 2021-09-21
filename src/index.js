@@ -21,7 +21,7 @@ function displayTasks(tasks) {
 
 const tasks = [
   {
-    description: 'Excersice',
+    description: 'Exercise',
     completed: false,
     index: 1,
   },
