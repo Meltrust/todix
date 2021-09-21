@@ -2,3 +2,79 @@ body {
   background-color: rgb(250, 253, 255);
   margin-top: 5rem;
 }
+
+/* prettier-ignore */
+
+main {
+  box-shadow:
+    rgba(17, 17, 26, 0.05) 0 4px 16px,
+    rgba(17, 17, 26, 0.05) 0 8px 32px;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  padding: 1rem 0;
+  opacity: 70%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 5% 1fr 2%;
+  border-bottom: solid 1px rgba(194, 194, 194, 0.4);
+}
+
+.list-items-text {
+  opacity: 70%;
+}
+
+.main-input {
+  border-bottom: solid 1px rgb(194, 194, 194, 0.4);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  opacity: 50%;
+}
+
+form {
+  display: block;
+}
+
+span {
+  opacity: 40%;
+  cursor: pointer;
+}
+
+#header {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px rgb(194, 194, 194, 0.4);
+}
+
+#clearSection {
+  width: 100%;
+}
+
+.clear-button {
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(244, 244, 245);
+  color: rgb(131, 129, 129);
+  border: none;
+}
+
+.btn {
+  transition: none;
+}
