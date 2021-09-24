@@ -1,5 +1,6 @@
 import './style.css';
-import * as module from './modules/classes.js';
+import BrowserSave from './modules/storing.js';
+import Completion from './modules/completing.js';
 
 class Task {
   constructor(arr, text) {
@@ -9,7 +10,7 @@ class Task {
   }
 }
 
-let tasks = module.BrowserSave.allTasks();
+let tasks = BrowserSave.allTasks();
 
 function displayTasks(arr) {
   const mainList = document.getElementById('mainList');
@@ -46,7 +47,7 @@ function addTaskUI() {
   const text = document.getElementById('taskDesc').value;
 
   tasks.push(new Task(tasks, text));
-  module.BrowserSave.addTasks(tasks);
+  BrowserSave.addTasks(tasks);
   displayTasks(tasks);
   document.getElementById('taskDesc').value = '';
 }
@@ -61,8 +62,8 @@ const tasksUl = document.querySelector('#mainList');
 tasksUl.addEventListener('change', (e) => {
   if (e.target.classList.contains('state')) {
     const { id } = e.target.parentElement;
-    module.Completion.completeToggle(tasks, parseInt(id, 10));
-    module.BrowserSave.addTasks(tasks);
+    Completion.completeToggle(tasks, parseInt(id, 10));
+    BrowserSave.addTasks(tasks);
     displayTasks(tasks);
   }
 });

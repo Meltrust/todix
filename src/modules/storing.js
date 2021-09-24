@@ -1,6 +1,4 @@
-/* eslint-disable max-classes-per-file */
-
-class BrowserSave {
+export default class BrowserSave {
   static addTasks(list) {
     localStorage.setItem('todoList', JSON.stringify(list));
   }
@@ -15,14 +13,3 @@ class BrowserSave {
     return tasks;
   }
 }
-
-class Completion {
-  static completeToggle = (arr, id) => {
-    const item = arr.find((task) => task.id === id);
-    if (item) {
-      item.completed = !item.completed;
-    }
-  }
-}
-
-export { Completion, BrowserSave };
