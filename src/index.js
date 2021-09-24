@@ -1,4 +1,15 @@
 import './style.css';
+import * as module from './modules/classes.js';
+
+class Task {
+  constructor(arr, text) {
+    this.id = arr.length + 1;
+    this.description = text;
+    this.completed = false;
+  }
+}
+
+const tasks = module.BrowserSave.allTasks();
 
 function displayTasks(tasks) {
   tasks.forEach((task) => {
@@ -18,23 +29,5 @@ function displayTasks(tasks) {
     mainList.appendChild(row);
   });
 }
-
-const tasks = [
-  {
-    description: 'Exercise',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'Yoga',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Walk the dog',
-    completed: false,
-    index: 3,
-  },
-];
 
 window.addEventListener('load', displayTasks(tasks));
