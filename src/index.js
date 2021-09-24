@@ -9,7 +9,7 @@ class Task {
   }
 }
 
-const tasks = module.BrowserSave.allTasks();
+let tasks = module.BrowserSave.allTasks();
 
 function displayTasks(arr) {
   const mainList = document.getElementById('mainList');
@@ -66,3 +66,12 @@ tasksUl.addEventListener('change', (e) => {
     displayTasks(tasks);
   }
 });
+
+function resetAllButton() {
+  tasks = [];
+  localStorage.setItem('todoList', JSON.stringify([]));
+  displayTasks(tasks);
+}
+
+const cl = document.getElementById('resetAll');
+cl.addEventListener('click', resetAllButton);
