@@ -4,7 +4,15 @@
 
 ![screenshot](./assets/img/app_screenshot.png)
 
-The appt is focused in minimalism and ease of use.  There's no need to go into lots of menus: just set your tasks each day, complete them and profit.
+This app is focused in minimalism and ease of use.  There's no need to go into lots of menus: just set your tasks each day, complete them and profit.
+
+## Live Demo
+
+https://meltrust.github.io/todix/
+
+
+
+## Made with
 
 - Plain Javascript
 - Webpack
