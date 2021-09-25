@@ -1,9 +1,9 @@
 /* eslint-disable no-restricted-globals */
 import './style.css';
-import BrowserSave from './modules/storing.js';
-import Completion from './modules/completing.js';
-import Task from './modules/crud.js';
-import displayTasks from './modules/rendering.js';
+import BrowserSave from './modules/storing';
+import Completion from './modules/completing';
+import Task from './modules/crud';
+import displayTasks from './modules/rendering';
 
 let tasks = BrowserSave.allTasks();
 

@@ -1,5 +1,5 @@
-import BrowserSave from './storing.js';
-import displayTasks from './rendering.js';
+import BrowserSave from './storing';
+import displayTasks from './rendering';
 
 export default class Task {
   constructor(arr, text) {
