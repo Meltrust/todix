@@ -25,5 +25,6 @@ export default function displayTasks(arr) {
         finished.classList.toggle('completed');
       }
     });
+    document.getElementById('taskDesc').select();
   }
 }

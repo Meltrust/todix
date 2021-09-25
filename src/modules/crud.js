@@ -24,6 +24,14 @@ export default class Task {
     }
   }
 
+  static updateId(arr) {
+    arr.forEach((task, index) => {
+      task.id = index + 1;
+    });
+    BrowserSave.addTasks(arr);
+    displayTasks(arr);
+  }
+
   static deleteTask(lst, index) {
     lst.splice(index, 1);
   }
